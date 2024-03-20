@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/harpoon",
