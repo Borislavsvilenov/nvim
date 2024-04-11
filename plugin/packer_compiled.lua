@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  moonfly = {
+    loaded = true,
+    path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/moonfly",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
