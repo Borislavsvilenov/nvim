@@ -22,5 +22,7 @@ return require('packer').startup(function(use)
 	use ('theprimeagen/harpoon')
 	use ('mbbill/undotree')
 	use ('Exafunction/codeium.vim')
+  use ('christoomey/vim-tmux-navigator')
+
 
 end)
