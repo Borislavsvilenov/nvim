@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["codeium.vim"] = {
     loaded = true,
     path = "/Users/borislavsvilenov/.local/share/nvim/site/pack/packer/start/codeium.vim",
