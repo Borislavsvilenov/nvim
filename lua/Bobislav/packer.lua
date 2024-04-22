@@ -18,6 +18,11 @@ return require('packer').startup(function(use)
 	use { 'bluz71/vim-nightfly-colors', as = 'nightfly' }
 	use { 'catppuccin/nvim', as = 'catppuccin' }
 
+  use { "williamboman/mason.nvim", 
+        "williamboman/mason-lspconfig.nvim", 
+        "neovim/nvim-lspconfig" 
+}
+
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use ('nvim-treesitter/playground')   
 	use ('theprimeagen/harpoon')
