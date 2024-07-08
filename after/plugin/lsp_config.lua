@@ -26,6 +26,9 @@ end
 require("lspconfig").pyright.setup({ on_attach = on_attach })
 require("lspconfig").tsserver.setup({ on_attach = on_attach })
 require("lspconfig").rust_analyzer.setup({ on_attach = on_attach })
-require("lspconfig").clangd.setup({ on_attach = on_attach, settings = { clangd = { path = "/usr/local/bin/clangd" } } })
+require("lspconfig").clangd.setup({ on_attach = on_attach, settings = { clangd = {
+  path = {"/usr/local/bin/clangd"},
+  includePath = {"/opt/homebrew/", "/usr/local/include/"}
+} } })
 require("lspconfig").cmake.setup({ on_attach = on_attach })
 require("lspconfig").lua_ls.setup({ on_attach = on_attach, settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
