@@ -28,7 +28,7 @@ require("lspconfig").tsserver.setup({ on_attach = on_attach })
 require("lspconfig").rust_analyzer.setup({ on_attach = on_attach })
 require("lspconfig").clangd.setup({ on_attach = on_attach, settings = { clangd = {
   path = {"/usr/local/bin/clangd"},
-  includePath = {"/opt/homebrew/", "/usr/local/include/"}
+  includePath = {"/opt/homebrew/Cellar/raylib/5.0/include"}
 } } })
 require("lspconfig").cmake.setup({ on_attach = on_attach })
 require("lspconfig").lua_ls.setup({ on_attach = on_attach, settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
