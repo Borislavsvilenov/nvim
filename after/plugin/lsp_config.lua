@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "rust_analyzer", "tsserver", "pyright", "lua_ls", "clangd", "cmake" },
+  ensure_installed = { "rust_analyzer", "ts_ls", "pyright", "lua_ls", "clangd", "cmake" },
 })
 
 local on_attach = function(_, bufnr)
@@ -24,7 +24,7 @@ local on_attach = function(_, bufnr)
 end
 
 require("lspconfig").pyright.setup({ on_attach = on_attach })
-require("lspconfig").tsserver.setup({ on_attach = on_attach })
+require("lspconfig").ts_ls.setup({ on_attach = on_attach })
 require("lspconfig").rust_analyzer.setup({ on_attach = on_attach })
 require("lspconfig").clangd.setup({ on_attach = on_attach, settings = { clangd = {
   path = {"/usr/local/bin/clangd"},
