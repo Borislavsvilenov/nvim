@@ -1,4 +1,6 @@
-/* 
+--[[ 
+
+vim.schedule(function()
 vim.keymap.set("n", "<Tab><Tab>", function()
 	return vim.fn["codeium#Accept"]()
 end)
@@ -14,5 +16,6 @@ end)
 vim.keymap.set("i", "<S-Tab>", function()
 	return vim.fn["codeium#Clear"]()
 end) 
-*/
+end)
+]]
 
